@@ -53,3 +53,24 @@
     font-size: 0.9rem;
     margin-top: 1rem;
 }
+
+/* ======= MOBILE RESPONSIVE STYLING ======= */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1.5rem;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-media {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
+    }
+}

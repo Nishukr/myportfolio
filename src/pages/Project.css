@@ -82,3 +82,21 @@
     color: #facc15; /* Yellow for visibility */
 }
 
+@keyframes githubPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.github-icon {
+    margin-right: 5px;
+    font-size: 18px;
+    color: #facc15;
+    animation: githubPulse 1.5s infinite ease-in-out;
+}

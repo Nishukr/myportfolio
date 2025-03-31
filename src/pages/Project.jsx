@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaNodeJs, FaReact } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaNodeJs, FaReact, FaGithub } from 'react-icons/fa';
 import { SiExpress, SiMongodb, SiRedux, SiChartdotjs, SiTailwindcss } from 'react-icons/si';
 import './Project.css';
 
@@ -23,6 +23,7 @@ const Projects = () => {
                     The <strong>Urban Waste Control System</strong> is a smart waste management platform.
                 </>
             ),
+            github: "https://github.com/Nishukr/Urban-waste-control",
         },
         {
             title: "Instock",
@@ -40,38 +41,11 @@ const Projects = () => {
             duration: "Dec 2024 - Feb 2025",
             description: (
                 <>
-                    <strong>Instock</strong> is a web stock application.
+                    <strong>Instock</strong> is a full stack web application.
                 </>
             ),
-        },
-        {
-            title: "Stone Paper Scissors",
-            image: "/media/images/stone-paper-scissors.jpg",
-            technologies: [
-                { icon: <FaHtml5 className="tech-icon" />, name: "HTML" },
-                { icon: <FaCss3Alt className="tech-icon" />, name: "CSS" },
-                { icon: <FaJs className="tech-icon" />, name: "JavaScript" }
-            ],
-            description: (
-                <>
-                    The <strong>Stone Paper Scissors</strong> game is an interactive web-based project.
-                </>
-            ),
-        },
-        {
-            title: "Flipkart Clone",
-            image: "/media/images/flipkart-clone.jpg",
-            technologies: [
-                { icon: <FaHtml5 className="tech-icon" />, name: "HTML" },
-                { icon: <FaCss3Alt className="tech-icon" />, name: "CSS" },
-                { icon: <FaJs className="tech-icon" />, name: "JavaScript" }
-            ],
-            description: (
-                <>
-                    The <strong>Flipkart Clone</strong> project replicates key e-commerce platform features.
-                </>
-            ),
-        },
+            github: "https://github.com/Nishukr/instocknew",
+        }
     ];
 
     return (
@@ -94,6 +68,16 @@ const Projects = () => {
                         </p>
                         <p className="project-duration"><strong>Duration:</strong> {project.duration}</p>
                         <div className="project-description">{project.description}</div>
+                        
+                        {/* GitHub Link with Icon */}
+                        <a 
+                            href={project.github} 
+                            className="github-link" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <FaGithub className="github-icon" /> 
+                        </a>
                     </div>
                 ))}
             </div>
