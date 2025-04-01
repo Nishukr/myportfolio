@@ -67,20 +67,22 @@ nav .active-link {
       display: block;
   }
 
-  nav {
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #334155;
-      display: none;
-      flex-direction: column;
-      text-align: center;
-      padding: 1rem 0;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease-in-out;
+  @media (max-width: 768px) {
+    nav {
+        position: absolute;
+        top: 60px;
+        left: 5%; /* Adds left margin */
+        width: 90%; /* Leaves space on left & right */
+        background-color: #1E293B;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        border-radius: 10px; /* Match header style */
+    }
   }
-
   /* Show menu when active */
   nav.show-menu {
       display: flex;
