@@ -47,7 +47,7 @@ const Header = () => {
           </li>
           <li>
             {/* Resume Button */}
-            <a href="\Nishu kumar.pdf" download="Nishu_Kumar_Resume.pdf" className="download-resume" onClick={closeMenu}>
+            <a href="\Nishu kumar.pdf" download="Nishu kumar.pdf" className="download-resume" onClick={closeMenu}>
               Resume
             </a>
           </li>
