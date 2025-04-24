@@ -34,12 +34,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/nishu-kumar-114bb5256" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="social-icon" />
           </a>
-          {/* <a href="https://www.geeksforgeeks.org/user/nishuk40136tz" target="_blank" rel="noopener noreferrer">
-            <FaCode className="social-icon" title="GeeksforGeeks" />
-          </a>
-          <a href="https://leetcode.com/u/Nishukumar91090/" target="_blank" rel="noopener noreferrer">
-            <SiLeetcode className="social-icon" title="LeetCode" />
-          </a> */}
+          
         </div>
 
         <p className="footer-text">© {new Date().getFullYear()} Nishu Kumar. All rights reserved.</p>
